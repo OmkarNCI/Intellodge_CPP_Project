@@ -139,6 +139,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = [
     'https://*.vfs.cloud9.us-east-1.amazonaws.com',
+    'https://intellodge.us-east-1.elasticbeanstalk.com',
 ]
 
 # Custom Backend authentication for the DynamoDB

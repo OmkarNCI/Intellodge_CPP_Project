@@ -1,4 +1,4 @@
-// static/js/room_form.js
+// static/js/room.js
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".needs-validation");
@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const roomTypeSelect = document.getElementById("room_type");
   const priceInput = document.getElementById("price");
   const roomNumberInput = document.getElementById("room_number");
+  const deleteModal = document.getElementById('deleteRoomModal');
+  const confirmBtn = document.getElementById('confirmDeleteRoomBtn');
   const imageInput = document.querySelector("input[name='room_image']");
   const imagePreview = document.getElementById("imagePreview");
   const imagePreviewContainer = document.getElementById("imagePreviewContainer");
@@ -18,7 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!form.checkValidity()) {
         event.preventDefault();
         event.stopPropagation();
-      } else {
+      }
+      else {
         // show temporary saving spinner
         if (submitBtn) {
           const originalText = submitBtn.textContent;
@@ -88,10 +91,22 @@ document.addEventListener("DOMContentLoaded", () => {
         const previewURL = URL.createObjectURL(file);
         imagePreview.src = previewURL;
         imagePreviewContainer.style.display = "block";
-      } else {
+      }
+      else {
         imagePreview.src = "";
         imagePreviewContainer.style.display = "none";
       }
     });
   }
+
+  // 
+  deleteModal.addEventListener('show.bs.modal', function(event) {
+    let button = event.relatedTarget;
+    let roomNumber = button.getAttribute('data-room-number');
+
+    // Set delete URL dynamically
+    confirmBtn.href = `/rooms/delete/${roomNumber}/`;
+  });
+
+
 });

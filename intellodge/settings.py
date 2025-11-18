@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-r$xf)fz%ek8*!vwdk0!4lz-61ae@!x%+ilu-$ygx)m$1&6i^!i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['intellodge.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['Intellodgerevenuetracker-env.eba-iba4uvvm.us-east-1.elasticbeanstalk.com']
 
 
 # Application definition
@@ -139,7 +139,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = [
     'https://*.vfs.cloud9.us-east-1.amazonaws.com',
-    'https://intellodge.us-east-1.elasticbeanstalk.com',
 ]
 
 # Custom Backend authentication for the DynamoDB

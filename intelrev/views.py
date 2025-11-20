@@ -58,11 +58,13 @@ def register(request):
             )
             messages.success(request, f"User created successfully with user id {username}")
             log.info(f"DynamoDB user created: {username}")
-            return render(request, 'intelrev/register.html', {'form': form})
+            return redirect('login')
         except Exception as e:
             log.error(f"Failed to create DynamoDB user: {e}")
             messages.error(request, f"Failed to create user profile in DynamoDB: {e}")
             return render(request, 'intelrev/register.html', {'form': form})
+            
+    return render(request, 'intelrev/register.html', {'form': form})
 
 
 def user_login(request):

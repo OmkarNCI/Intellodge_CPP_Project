@@ -7,7 +7,7 @@ import shutil
 from intellodge_core.logger import get_logger
 
 AWS_REGION = "us-east-1"
-EXISTING_LAMBDA_ROLE_ARN = "arn:aws:iam::171932644325:role/LabRole"
+EXISTING_LAMBDA_ROLE_ARN = "arn:aws:iam::414333503877:role/LabRole"
 
 lambda_client = boto3.client("lambda", region_name=AWS_REGION)
 events_client = boto3.client("events", region_name=AWS_REGION)
@@ -83,4 +83,4 @@ if __name__ == "__main__":
     log.info("=== Building and Deploying AutoRoomStatusLambda ===")
     build_lambda_package()
     function_arn = create_or_update_lambda(ZIP_PATH)
-    log.success("Deployment complete!")
+    log.info("Deployment complete!")

@@ -1,11 +1,12 @@
 import boto3
 from botocore.exceptions import ClientError
+from django.conf import settings
 
 class CognitoService:
     def __init__(self):
         self.client = boto3.client('cognito-idp', region_name='us-east-1')
-        self.user_pool_id = "us-east-1_qC5AK66Ng"
-        self.client_id = "2be3nlsi7tb15kle06kh4bc51t"
+        self.user_pool_id = getattr(settings, "COGNITO_USER_POOL_ID")
+        self.client_id = getattr(settings, "COGNITO_CLIENT_ID")
 
     # User Signup via Cognito authentication
     def sign_up(self, username, password, email):

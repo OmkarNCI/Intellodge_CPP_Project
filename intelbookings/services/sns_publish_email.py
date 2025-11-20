@@ -4,7 +4,7 @@ from django.conf import settings
 AWS_REGION = "us-east-1"
 sns_client = boto3.client("sns", region_name=AWS_REGION)
 # booking confirmation topic arn
-TOPIC_ARN = "arn:aws:sns:us-east-1:171932644325:booking_confirmation_topic"
+TOPIC_ARN = "arn:aws:sns:us-east-1:414333503877:booking_confirmation_topic"
 
 # this function will check guest email is already subscribed in list of subscriptions or not.
 def is_email_subscribed(guest_email):

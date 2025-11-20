@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-r$xf)fz%ek8*!vwdk0!4lz-61ae@!x%+ilu-$ygx)m$1&6i^!i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # Allowed Cloud 9 host as well as elastic beanstalk server
 ALLOWED_HOSTS = ['08282b4eb0a9490b8f0247065665da13.vfs.cloud9.us-east-1.amazonaws.com','Intellodgerevenuetracker-env.eba-iba4uvvm.us-east-1.elasticbeanstalk.com']
@@ -149,8 +149,8 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 # Storing the below details securely: from the Cognito setup
-COGNITO_USER_POOL_ID = "us-east-1_qC5AK66Ng"
-COGNITO_CLIENT_ID = "2be3nlsi7tb15kle06kh4bc51t"
+COGNITO_USER_POOL_ID = "us-east-1_icqLr20CS"
+COGNITO_CLIENT_ID = "4e1o6h4fote0icdvoflgb3pilu"
 COGNITO_REGION = "us-east-1"
 
 # below is the bucket name from S3

@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-r$xf)fz%ek8*!vwdk0!4lz-61ae@!x%+ilu-$ygx)m$1&6i^!i
 DEBUG = False
 
 # Allowed Cloud 9 host as well as elastic beanstalk server
-ALLOWED_HOSTS = ['08282b4eb0a9490b8f0247065665da13.vfs.cloud9.us-east-1.amazonaws.com','Intellodge-env.eba-7f3apvja.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['08282b4eb0a9490b8f0247065665da13.vfs.cloud9.us-east-1.amazonaws.com','Intellodge-env.eba-7f3apvja.us-east-1.elasticbeanstalk.com', '*']
 
 
 # Application definition

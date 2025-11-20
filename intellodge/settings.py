@@ -123,7 +123,6 @@ USE_TZ = True
 # Static files 
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "intelrev" / "static"]
 
 STATIC_ROOT = BASE_DIR / "staticfiles"  # used for collectstatic
 

@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-r$xf)fz%ek8*!vwdk0!4lz-61ae@!x%+ilu-$ygx)m$1&6i^!i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['Intellodgerevenuetracker-env.eba-iba4uvvm.us-east-1.elasticbeanstalk.com']
+# Allowed Cloud 9 host as well as elastic beanstalk server
+ALLOWED_HOSTS = ['08282b4eb0a9490b8f0247065665da13.vfs.cloud9.us-east-1.amazonaws.com','Intellodgerevenuetracker-env.eba-iba4uvvm.us-east-1.elasticbeanstalk.com']
 
 
 # Application definition

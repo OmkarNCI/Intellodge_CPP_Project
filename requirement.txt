@@ -1,3 +1,7 @@
+--index-url https://test.pypi.org/simple
+--extra-index-url https://pypi.org/simple
+
+intellodge_core==1.0.3
 asgiref==3.10.0
 awsebcli==3.25.3
 bcrypt==5.0.0
@@ -13,14 +17,13 @@ colorama==0.4.6
 cryptography==46.0.3
 decorator==5.2.1
 Deprecated==1.3.1
-Django==4.2.25
+django==4.2.25
 django-dynamodb-sessions==0.6
 django-widget-tweaks==1.5.0
 ecdsa==0.19.1
 fabric==3.2.2
 gunicorn==23.0.0
 idna==3.11
-intellodge_core==1.0.3
 invoke==2.2.1
 jmespath==1.0.1
 packaging==24.2

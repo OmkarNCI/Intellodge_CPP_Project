@@ -66,6 +66,7 @@ class RevenueService:
                 continue
             month = dt.month
             monthly[month] += self._to_float(b.get("amount", 0))
+            
         # ensure months 1..12 present
         return [round(monthly.get(m, 0.0), 2) for m in range(1, 13)]
 
